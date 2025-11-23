@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="faq.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+        }
+
+        .faq-item {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+        .question.hovered {
+            color: blue;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 5px;
+            color: #444;
+        }
+
+        .question.focus-highlight {
+            background: #fce4a3;
+        }
+
+        input {
+            margin-top: 10px;
+            padding: 6px;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>FAQ Section</h1>
+</header>
+
+<main>
+    <section class="faq">
+
+        <div class="faq-item">
+            <div class="question">1. What is jQuery?</div>
+            <div class="answer">
+                jQuery is a JavaScript library that simplifies DOM manipulation.
+                <br><input type="text" placeholder="Type your follow-up question">
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">2. What is DOM?</div>
+            <div class="answer">
+                DOM stands for Document Object Model.
+                <br><input type="text" placeholder="Your thoughts...">
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">3. What is AJAX?</div>
+            <div class="answer">
+                AJAX lets you load data without refreshing the page.
+                <br><input type="text" placeholder="Have a doubt?">
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">4. What is API?</div>
+            <div class="answer">
+                API allows communication between software.
+                <br><input type="text" placeholder="Write feedback">
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">5. What is CSS?</div>
+            <div class="answer">
+                CSS styles your webpage.
+                <br><input type="text" placeholder="Add more notes">
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>
