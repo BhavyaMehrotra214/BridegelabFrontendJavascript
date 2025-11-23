@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-jQuery Widgets</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .widget {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f2f2f2;
+            border-radius: 6px;
+            width: 300px;
+        }
+        #carousel img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        #modalBox {
+            display: none;
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            width: 250px;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+        }
+        .activeWidget {
+            background: yellow;
+        }
+        .tooltipBox {
+            display: none;
+            background: black;
+            color: white;
+            padding: 4px 8px;
+            position: absolute;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Multi-jQuery Widget Dashboard</h2>
+
+    <!-- Carousel Widget -->
+    <div class="widget" id="carousel">
+        <img id="carImg" src="https://via.placeholder.com/300x150/ff6b6b">
+    </div>
+
+    <div class="widget" id="modalWidget">
+        <button id="openModal">Open Notification</button>
+    </div>
+
+
+    <div class="widget" id="highlightWidget">
+        Click to Highlight Active Widget
+    </div>
+
+
+    <div class="widget" id="tooltipWidget">
+        Hover me for Tooltip
+        <div class="tooltipBox">This is a tooltip!</div>
+    </div>
+    <div id="modalBox">
+        <h3>Notification</h3>
+        <p>This is a popup message.</p>
+        <button id="closeModal">Close</button>
+    </div>
+
+    <script src="q9.js"></script>
+
+</body>
+</html>
