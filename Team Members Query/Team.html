@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members Directory</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="team.js" defer></script>
+
+    <style>
+        body { font-family: Arial; margin: 25px; }
+
+        .department {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #ccc;
+        }
+
+        .dept-title {
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .manager {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f0f0f0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .employee {
+            margin-left: 30px;
+            padding: 6px;
+            cursor: pointer;
+        }
+
+        .contact-info {
+            display: none;
+            font-size: 12px;
+            margin-left: 40px;
+        }
+
+        .highlight {
+            background: #ffe6a4;
+        }
+
+        .collapsed * {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Team Members Directory</h1>
+</header>
+
+<main>
+
+    <section class="department" data-dept="sales">
+        <div class="dept-title">Sales Department</div>
+
+        <div class="manager">Alice (Manager)
+            <div class="employee">David <p class="contact-info"> 9876+ 43210</p></div>
+            <div class="employee">Emma <p class="contact-info"> 9123+ 56789</p></div>
+        </div>
+    </section>
+
+    <section class="department" data-dept="marketing">
+        <div class="dept-title">Marketing Department</div>
+
+        <div class="manager">John (Manager)
+            <div class="employee">Sarah <p class="contact-info"> 9000+ 11111</p></div>
+            <div class="employee">Chris <p class="contact-info"> 8999+ 22222</p></div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
