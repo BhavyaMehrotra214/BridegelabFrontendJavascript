@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Highlight</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="products.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .product-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .product {
+            width: 150px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .highlight {
+            background-color: #ffe7ad;
+            border-color: orange;
+        }
+
+        .details {
+            display: none;
+            font-size: 13px;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .fav {
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .selected {
+            color: red;
+        }
+        .product[data-discount="true"] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Products</h1>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <div class="product" data-stock="in" data-discount="true">
+                <span class="fav"></span>
+                <h3>Product 1</h3>
+                <p>₹300</p>
+                <p class="details">Best quality product with 20% discount!</p>
+            </div>
+
+            <div class="product" data-stock="out" data-discount="false">
+                <span class="fav"></span>
+                <h3>Product 2</h3>
+                <p>₹450</p>
+                <p class="details">High durability and premium finish.</p>
+            </div>
+
+            <div class="product" data-stock="in" data-discount="false">
+                <span class="fav"></span>
+                <h3>Product 3</h3>
+                <p>₹199</p>
+                <p class="details">Lightweight and value for money.</p>
+            </div>
+
+            <div class="product" data-stock="in" data-discount="true">
+                <span class="fav"></span>
+                <h3>Product 4</h3>
+                <p>₹999</p>
+                <p class="details">Special offer! Limited time discount.</p>
+            </div>
+
+            <div class="product" data-stock="out" data-discount="false">
+                <span class="fav"></span>
+                <h3>Product 5</h3>
+                <p>₹550</p>
+                <p class="details">New arrival with excellent build quality.</p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

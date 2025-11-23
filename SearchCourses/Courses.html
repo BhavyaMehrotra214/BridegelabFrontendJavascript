@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Courses</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .course {
+            padding: 10px;
+            margin: 6px 0;
+            background: #f5f5f5;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .highlight {
+            background: yellow !important;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Search Courses</h2>
+
+    <input type="text" id="searchInput" placeholder="Search courses...">
+    <button id="clearBtn">Clear</button>
+
+    <p id="count"></p>
+
+    <div id="courseList">
+        <div class="course">JavaScript Fundamentals</div>
+        <div class="course">Advanced CSS Techniques</div>
+        <div class="course">Python for Beginners</div>
+        <div class="course">React & Redux Mastery</div>
+        <div class="course">Data Structures & Algorithms</div>
+    </div>
+
+    <script src="q7.js"></script>
+</body>
+</html>
