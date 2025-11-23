@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+        input {
+            padding: 8px;
+            width: 250px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .error {
+            border: 2px solid red !important;
+            background: #ffe6e6;
+        }
+        .successMsg {
+            padding: 10px;
+            background: #d4edda;
+            color: #155724;
+            margin-top: 15px;
+            border-radius: 5px;
+            width: 280px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>User Registration</h2>
+
+    <form id="regForm">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="email" placeholder="Enter Email">
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="q10.js"></script>
+
+</body>
+</html>
