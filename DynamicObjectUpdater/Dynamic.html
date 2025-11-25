@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Object Updater</title>
+  <style>
+    body {
+      font-family: Arial;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    #output {
+      background: #f4f4f4;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Update User Details</h2>
+
+  <form id="form">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="number" id="age" placeholder="Enter Age">
+
+    <button type="submit">Update</button>
+  </form>
+
+  <h3>Updated User Object:</h3>
+  <div id="output"></div>
+
+  <script src="Dynamic.js"></script>
+
+</body>
+</html>
