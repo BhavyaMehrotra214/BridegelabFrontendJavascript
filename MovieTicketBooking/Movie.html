@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+    <style>
+        input {
+            width: 250px;
+            padding: 8px;
+            margin-bottom: 6px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .valid {
+            border-color: green;
+        }
+        .invalid {
+            border-color: red;
+        }
+        #ticket {
+            margin-top: 15px;
+            padding: 10px;
+            border: 2px solid black;
+            width: 270px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Movie Ticket Booking</h2>
+
+    <form id="ticketForm">
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <div id="nameError" class="error"></div>
+
+        <input type="text" id="email" placeholder="Enter Email">
+        <div id="emailError" class="error"></div>
+
+        <input type="number" id="seats" placeholder="Number of Seats (1-10)">
+        <div id="seatError" class="error"></div>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+
+    <div id="ticket"></div>
+
+    <script src="Movie.js"></script>
+</body>
+</html>
