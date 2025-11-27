@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Step Form</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .step { display: none; margin-top: 20px; }
+    .active { display: block; }
+    .buttons { margin-top: 20px; }
+    .error { color: red; font-size: 14px; }
+    #summaryBox {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #000;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Multi-Step Form</h2>
+
+  <div class="step active" id="step1">
+    <label>Name:</label><br>
+    <input type="text" id="nameInput">
+    <p class="error" id="nameError"></p>
+  </div>
+
+  <div class="step" id="step2">
+    <label>Email:</label><br>
+    <input type="text" id="emailInput">
+    <p class="error" id="emailError"></p>
+  </div>
+
+  <div class="step" id="step3">
+    <label>Password:</label><br>
+    <input type="password" id="passwordInput">
+    <p class="error" id="passwordError"></p>
+  </div>
+
+ 
+  <div class="buttons">
+    <button id="backBtn">Back</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div id="summaryBox"></div>
+
+  <script src="Form.js"></script>
+</body>
+</html>
