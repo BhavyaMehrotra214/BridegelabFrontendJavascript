@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+
+  <style>
+    body { font-family: Arial; padding: 20px; }
+
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+
+    #successMsg {
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Form Validation</h2>
+
+  <form id="myForm">
+
+    <label>Name:</label><br>
+    <input type="text" id="name"><br>
+    <p class="error" id="nameError"></p>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+    <p class="error" id="emailError"></p>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br>
+    <p class="error" id="passwordError"></p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="successMsg">Form Submitted Successfully!</p>
+
+  <script src="Form.js"></script>
+</body>
+</html>
