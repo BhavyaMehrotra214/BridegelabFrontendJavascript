@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product List Manager</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    ul { padding: 0; margin-top: 20px; }
+    li { list-style: none; padding: 10px; border: 1px solid #ccc; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+    .edit-input { width: 60%; padding: 4px; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Dynamic Product List Manager</h2>
+
+  <input type="text" id="productInput" placeholder="Enter product name" />
+  <button id="addBtn">Add Product</button>
+
+  <ul id="productList"></ul>
+
+  <script src="Product.js"></script>
+</body>
+</html>
