@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Dropdown</title>
+
+  <style>
+    body { font-family: Arial; padding: 20px; }
+
+    #dropdownBtn {
+      padding: 10px 15px;
+      border: 1px solid #333;
+      cursor: pointer;
+      width: 180px;
+    }
+
+    #dropdownMenu {
+      border: 1px solid #333;
+      width: 180px;
+      display: none;
+      margin-top: 5px;
+      position: absolute;
+      background: white;
+    }
+
+    .option {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background: #eeeeee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Custom Dropdown</h2>
+
+  <div id="dropdown">
+    <div id="dropdownBtn">Select Option</div>
+
+    <div id="dropdownMenu">
+      <div class="option">Option 1</div>
+      <div class="option">Option 2</div>
+      <div class="option">Option 3</div>
+    </div>
+  </div>
+
+  <script src="Dropdown.js"></script>
+</body>
+</html>
