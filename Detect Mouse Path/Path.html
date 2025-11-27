@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Path & Logger</title>
+
+  <style>
+    #box {
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    #coords {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Mouse Path & Double-Click Dot Drop</h2>
+
+  <div id="box"></div>
+
+  <p id="coords">X: 0 , Y: 0</p>
+
+  <script src="Path.js"></script>
+</body>
+</html>
