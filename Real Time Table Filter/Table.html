@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Table Filter</title>
+
+  <style>
+    table { width: 60%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+    #noResult { margin-top: 10px; color: red; font-weight: bold; display: none; }
+  </style>
+</head>
+
+<body>
+
+  <h2>Student Table Filter</h2>
+
+  <input type="text" id="searchBox" placeholder="Search by name/branch/cgpa...">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>CGPA</th>
+      </tr>
+    </thead>
+
+    <tbody id="tableBody">
+      <tr><td>Rohan</td><td>CSE</td><td>8.5</td></tr>
+      <tr><td>Ananya</td><td>ECE</td><td>9.1</td></tr>
+      <tr><td>Vikas</td><td>ME</td><td>7.8</td></tr>
+      <tr><td>Neha</td><td>CSE</td><td>9.4</td></tr>
+      <tr><td>Aditya</td><td>CIVIL</td><td>8.0</td></tr>
+    </tbody>
+  </table>
+
+  <p id="noResult">No results found</p>
+
+  <script src="Table.js"></script>
+</body>
+</html>
