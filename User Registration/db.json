@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice Johnson", "email": "alice@gmail.com" },
+    { "id": 2, "name": "Bob Smith", "email": "bob@gmail.com" },
+    { "id": 3, "name": "Charlie Lee", "email": "charlie@gmail.com" },
+    { "id": 4, "name": "Diana Prince", "email": "diana@gmail.com" },
+    { "id": 5, "name": "Ethan Clark", "email": "ethan@gmail.com" }
+  ]
+}

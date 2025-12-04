@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  form { max-width: 400px; display: flex; flex-direction: column; gap: 10px; }
+  input { padding: 8px; font-size: 14px; }
+  .message { margin-top: 10px; }
+  .error { color: red; }
+  .success { color: green; }
+</style>
+</head>
+<body>
+
+<h2>User Registration</h2>
+
+<form id="registrationForm">
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <button type="submit">Register</button>
+</form>
+
+<div id="message" class="message"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="registration.js"></script>
+
+</body>
+</html>
