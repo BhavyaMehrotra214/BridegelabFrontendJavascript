@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Search Products</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  #searchResults { margin-top: 20px; }
+  .product { display: flex; align-items: center; margin-bottom: 10px; }
+  .product img { width: 50px; height: 50px; margin-right: 10px; }
+  #loading { display: none; margin-top: 10px; }
+  .no-results { color: red; }
+</style>
+</head>
+<body>
+
+<h2>Live Search Products</h2>
+<input type="text" id="searchBox" placeholder="Search products...">
+<div id="loading">Loading...</div>
+<div id="searchResults"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

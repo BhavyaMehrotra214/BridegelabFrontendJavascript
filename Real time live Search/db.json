@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Wireless Mouse", "price": 499, "image": "https://via.placeholder.com/100" },
+    { "id": 2, "name": "Bluetooth Keyboard", "price": 799, "image": "https://via.placeholder.com/100" },
+    { "id": 3, "name": "Gaming Headset", "price": 1299, "image": "https://via.placeholder.com/100" },
+    { "id": 4, "name": "USB-C Charger", "price": 599, "image": "https://via.placeholder.com/100" },
+    { "id": 5, "name": "Laptop Stand", "price": 999, "image": "https://via.placeholder.com/100" }
+  ]
+}
