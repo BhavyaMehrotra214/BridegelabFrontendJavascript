@@ -7,7 +7,7 @@ const menu = {
 
 // Function to calculate total bill
 function calculateBill(orderItems) {
-    // Step 1: map() → convert items into their prices
+
     const prices = orderItems.map(item => {
         if (!menu[item]) {
             // Throw an error for invalid item
