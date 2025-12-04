@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-API Dashboard</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  .dashboard { display: flex; gap: 20px; }
+  .card { padding: 20px; border: 1px solid #ccc; border-radius: 5px; width: 150px; text-align: center; }
+  .loading { background: #eee; height: 20px; margin: 10px 0; border-radius: 4px; animation: pulse 1.5s infinite; }
+  @keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  .warning { color: red; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h2>Multi-API Dashboard</h2>
+<div id="warning" class="warning"></div>
+<div class="dashboard">
+  <div class="card">
+    <h3>Total Users</h3>
+    <div id="usersCount" class="loading"></div>
+  </div>
+  <div class="card">
+    <h3>Total Orders</h3>
+    <div id="ordersCount" class="loading"></div>
+  </div>
+  <div class="card">
+    <h3>Total Products</h3>
+    <div id="productsCount" class="loading"></div>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
